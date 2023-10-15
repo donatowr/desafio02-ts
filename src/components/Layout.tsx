@@ -3,10 +3,14 @@ import { Header } from "./Header/Header"
 
 export const Layout = ({ children }: any) => {
   return(
-    <>
-      <Header />
-      { children }
+  
+    
+    <Layout>
+    <Header />
+        { children }      
       <Footer />
-    </>
+      </Layout>
+  
+    
   )
 }
